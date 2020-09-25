@@ -6,10 +6,10 @@ forever(function () {
     let dead = 0
     let win = 0
     makerController.player1.setButton(ArcadeButton.A, false)
-    if (win) {
+    if (win == 1) {
         music.baDing.play()
     }
-    if (dead) {
+    if (dead == 1) {
         music.pewPew.play()
     }
 })
